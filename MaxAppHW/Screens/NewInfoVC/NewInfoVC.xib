@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewInfoVC" customModule="MaxAppHW" customModuleProvider="target">
+            <connections>
+                <outlet property="createUserButton" destination="hj3-FU-DTA" id="Rym-Ya-lMu"/>
+                <outlet property="lastNameTextField" destination="5cO-nw-SAc" id="OWV-0o-zgY"/>
+                <outlet property="nameTextField" destination="ipQ-Fw-9GQ" id="LLF-TR-eua"/>
+                <outlet property="newLastNameLabel" destination="wKy-Si-dT3" id="NbD-kf-MrH"/>
+                <outlet property="newNameLabel" destination="Uyh-AI-fOf" id="wgv-n7-CNi"/>
+                <outlet property="saveInfoButton" destination="QIE-ye-Bv1" id="eXd-CR-w6m"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="o2I-iw-YWo">
+                    <rect key="frame" x="132" y="364" width="150" height="182.5"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ipQ-Fw-9GQ">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="aeU-s4-cZw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5cO-nw-SAc">
+                            <rect key="frame" x="0.0" y="74" width="150" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="UPe-Qr-TKr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIE-ye-Bv1">
+                            <rect key="frame" x="0.0" y="148" width="150" height="34.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="yuQ-mC-Geb"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="tinted" title="Save"/>
+                            <connections>
+                                <action selector="saveInfoActionButton" destination="-1" eventType="touchUpInside" id="5rS-PT-2RC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="yVE-U3-04P">
+                    <rect key="frame" x="132" y="365" width="150" height="180.5"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uyh-AI-fOf">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="34"/>
+                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="Qfz-q8-zlG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wKy-Si-dT3">
+                            <rect key="frame" x="0.0" y="73" width="150" height="34"/>
+                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="H10-zZ-iAa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hj3-FU-DTA">
+                            <rect key="frame" x="0.0" y="146" width="150" height="34.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="oJW-L2-9ru"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="systemPurpleColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            <connections>
+                                <action selector="createUserButtonAction" destination="-1" eventType="touchUpInside" id="6Xf-fu-6CN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yVE-U3-04P" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="CbX-Ry-Mpf"/>
+                <constraint firstItem="yVE-U3-04P" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Mb1-tg-JTI"/>
+                <constraint firstItem="o2I-iw-YWo" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="h2o-TY-jMN"/>
+                <constraint firstItem="o2I-iw-YWo" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="pdt-1W-2fh"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
